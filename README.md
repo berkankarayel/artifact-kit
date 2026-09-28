@@ -11,6 +11,7 @@ Neyin çekileceği `lists/` altındaki metin dosyalarında tanımlanır; scriptl
 | 1 | [Kurulum ve Yapılandırma](docs/01-kurulum.md) | ✅ |
 | 2 | [Image Çekme (image-pull)](docs/02-image-pull.md) | ✅ |
 | 3 | [Image'ı Nexus'a Gönderme (image-push)](docs/03-image-push.md) | ✅ |
+| 4 | [Deb Paketlerini Çekme (deb-fetch)](docs/04-deb-fetch.md) | ✅ |
 
 ## Hızlı Başlangıç
 
