@@ -1,0 +1,17 @@
+chrony          
+ipset          
+zstd
+nfs-common      
+open-iscsi 
+jq
+vim
+bash-completion
+htop
+sysstat        
+fio            
+tcpdump
+dnsutils        
+traceroute
+net-tools
+lsof  
+strace

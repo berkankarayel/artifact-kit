@@ -32,7 +32,7 @@ load_config() {
 read_list() {
   local file="$1"
   local line
-  while IFS= read -r line; do
+  while IFS= read -r line || [[ -n "$line" ]]; do
     line="${line%%#*}"
     line="$(echo "$line" | xargs)"
     [[ -z "$line" ]] && continue
@@ -118,4 +118,17 @@ push_image() {
   docker tag "$image" "$target"
   log_info "Gonderiliyor: $target"
   docker push --quiet "$target"
+}
+
+
+# ---------- Dosya ----------
+# Bir klasordeki dosyalarin sha256 ozetlerini SHA256SUMS dosyasina yazar.
+write_checksums() {
+  local dir="$1"
+  (
+    cd "$dir"
+    find . -maxdepth 1 -type f ! -name SHA256SUMS -printf '%f\n' \
+      | sort | xargs -r sha256sum > SHA256SUMS
+  )
+  log_info "Checksum dosyasi yazildi: $dir/SHA256SUMS"
 }
