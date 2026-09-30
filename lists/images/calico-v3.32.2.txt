@@ -1,0 +1,26 @@
+# Calico v3.32.2 (tigera operator v1.42.6)
+# Kaynak: operator --print-images=list, sadece gerekenler
+
+# Operator
+quay.io/tigera/operator:v1.42.6
+
+# Temel ag (Installation)
+quay.io/calico/node:v3.32.2
+quay.io/calico/cni:v3.32.2
+quay.io/calico/kube-controllers:v3.32.2
+quay.io/calico/typha:v3.32.2
+quay.io/calico/pod2daemon-flexvol:v3.32.2
+quay.io/calico/csi:v3.32.2
+quay.io/calico/node-driver-registrar:v3.32.2
+
+# APIServer
+quay.io/calico/apiserver:v3.32.2
+
+# Goldmane + Whisker (trafik izleme)
+quay.io/calico/goldmane:v3.32.2
+quay.io/calico/whisker:v3.32.2
+quay.io/calico/whisker-backend:v3.32.2
+
+# Yardimcilar
+quay.io/calico/key-cert-provisioner:v3.32.2
+quay.io/calico/webhooks:v3.32.2

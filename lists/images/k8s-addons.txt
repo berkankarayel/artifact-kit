@@ -1,0 +1,11 @@
+# Kubernetes yardimci bilesenleri (CKA pratigi icin)
+
+# kubectl top
+registry.k8s.io/metrics-server/metrics-server:v0.9.0
+
+# Varsayilan StorageClass (PVC)
+docker.io/rancher/local-path-provisioner:v0.0.37
+
+# local-path yardimci pod'lari + test pod'lari
+# (manifest'te etiketsiz geliyor, surumu biz sabitledik)
+docker.io/library/busybox:1.37.0
